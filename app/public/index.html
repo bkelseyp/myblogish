@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>myBlogish</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar is-black">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item has-text-danger has-text-weight-semibold is-uppercase is-size-5" href="#">
-            myBlog&#8209;<i>ish</i>
-          </a>
-          <!-- m&thinsp;y&thinsp;B&thinsp;l&thinsp;o&thinsp;g&thinsp;&#8209;&thinsp;<i>i&thinsp;s&thinsp;h</i> -->
-          <span class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-danger has-text-weight-semibold is-uppercase is-size-5" href="#">
+                    myBlog&#8209;<i>ish</i>
+                </a>
+                <!-- m&thinsp;y&thinsp;B&thinsp;l&thinsp;o&thinsp;g&thinsp;&#8209;&thinsp;<i>i&thinsp;s&thinsp;h</i> -->
+                <span class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="/" class="navbar-item has-text-weight-light is-active">Home</a>
+                    <a href="/blogish" class="navbar-item has-text-weight-light">Blog-<i>ish</i></a>
+                    <a href="/weightish" class="navbar-item has-text-weight-light">Weight-<i>ish</i></a>
+                    <a href="/adviceish" class="navbar-item has-text-weight-light">Advice-<i>ish</i></a>
+                    <a href="/briannaisms" class="navbar-item has-text-weight-light">Briannaisms</a>
+                    <a href="" class="navbar-item has-text-weight-light"></a>
+
+                </div>
+            </div>
         </div>
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-end">
-                <a href="/" class="navbar-item has-text-weight-light is-active">Home</a>
-            <a href="/blogish" class="navbar-item has-text-weight-light">Blog-<i>ish</i></a>
-            <a href="/weightish" class="navbar-item has-text-weight-light">Weight-<i>ish</i></a>
-            <a href="/adviceish" class="navbar-item has-text-weight-light">Advice-<i>ish</i></a>
-            <a href="/briannaisms" class="navbar-item has-text-weight-light">Briannaisms</a>
-            <a href="" class="navbar-item has-text-weight-light"></a>
-   
-          </div>
-        </div>
-      </div>
     </nav>
 
     <section class="hero is-medium is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column  is-offset-2-desktop is-full">
+                        <h1 class="title is-2 is-spaced">
+                            Stay Connected!
+                        </h1>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-offset-2-desktop is-two-thirds">
+                        <div class="control">
+                            <div class="field">
+                                <p class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="Email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="control">
+                            <button class="button is-link">Submit</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-medium is-warning">
             <div class="hero-body">
                 <div class="container">
                     <div class="columns">
-                        <div class="column is-8-desktop is-offset-2-desktop">
+                        <div class="column is-half">
                             <h1 class="title is-2 is-spaced">
                                 Hello Bulma!
                             </h1>
@@ -53,41 +92,41 @@
                 </div>
             </div>
         </section>
-    
-        <footer class="footer has-text-centered">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-8-desktop is-offset-2-desktop">
-                        <p>
-                            <strong class="has-text-weight-semibold">
-                                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
-                            </strong>
-                        </p>
-                        <p>
-                            <small>
-                                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-                            </small>
-                        </p>
-                        <p style="margin-top: 1rem;">
-                            <a href="http://bulma.io">
-                                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                            </a>
-                        </p>
-                    </div>
+
+    <footer class="footer has-text-centered">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-desktop is-offset-2-desktop">
+                    <p>
+                        <strong class="has-text-weight-semibold">
+                            <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
+                        </strong>
+                    </p>
+                    <p>
+                        <small>
+                            Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                        </small>
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <a href="http://bulma.io">
+                            <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                        </a>
+                    </p>
                 </div>
             </div>
-        </footer>
-    
-    <script type="text/javascript">
-      (function() {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
-        burger.addEventListener('click', function(){
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-        });
-      })();
-    </script>
-  </body>
-</html>
+        </div>
+    </footer>
 
+    <script type="text/javascript">
+        (function () {
+            var burger = document.querySelector('.burger');
+            var nav = document.querySelector('#' + burger.dataset.target);
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        })();
+    </script>
+</body>
+
+</html>
