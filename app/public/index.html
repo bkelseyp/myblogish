@@ -1,91 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>myBlogish</title>
-
-  <link rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
-
-</head>
-
-<body>
-        <section class="hero is-medium is-primary">
-                <div class="hero-body">
-                  <div class="container">
-                    <div class="columns">
-                      <div class="column is-8-desktop is-offset-2-desktop">
-                        <h1 class="title is-2 is-spaced">
-                          Hello Bulma!
-                        </h1>
-                        <h2 class="subtitle is-4">
-                            Congratulations! You're running the <strong>Bulma start</strong> project.
-                            <br>
-                            It includes everything you need to <strong>build your own website</strong> with Bulma.
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-  <!-- <div class="container">
-
-    <div class="jumbotron">
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-      <hr>
-      <h2>Answer a few basic questions. </h2>
-      <h2>Then find the friend with the greatest compatibility!</h2>
-      <br>
-
-      <div>
-        <a href="/survey"><button class="btn btn-lg btn-primary"><h4><span class="fa fa-list-alt"></span> Go to Survey</h4></button></a>
-      </div>
-
-    </div>
-
-    <footer class="footer">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myBlogish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-black">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-      </div>
-    </footer>
-
-  </div> -->
-
-  <footer class="footer has-text-centered">
-        <div class="container">
-           <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <p>
-                <strong class="has-text-weight-semibold">
-                  <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
-                </strong>
-              </p>
-              <p>
-                <small>
-                  Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-                </small>
-              </p>
-              <p style="margin-top: 1rem;">
-                <a href="http://bulma.io">
-                  <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                </a>
-              </p>
-            </div>
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-danger" href="#" style="font-weight:bold;">
+            myBlog-ish
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+                <a href="/" class="navbar-item is-active">Home</a>
+            <a href="/blogish" class="navbar-item is-active">Blogish</a>
+            <a href="/weightish" class="navbar-item">Weightish</a>
+            <a href="/adviceish" class="navbar-item">Adivceish</a>
+            <a href="/briannaisms" class="navbar-item">Briannaisms</a>
+   
           </div>
         </div>
-      </footer>
+      </div>
+    </nav>
 
-
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
-
-
-</body>
-
+    <section class="hero is-medium is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-8-desktop is-offset-2-desktop">
+                            <h1 class="title is-2 is-spaced">
+                                Hello Bulma!
+                            </h1>
+                            <h2 class="subtitle is-4">
+                                Congratulations! You're running the <strong>Bulma start</strong> project.
+                                <br>
+                                It includes everything you need to <strong>build your own website</strong> with Bulma.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer has-text-centered">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8-desktop is-offset-2-desktop">
+                        <p>
+                            <strong class="has-text-weight-semibold">
+                                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
+                            </strong>
+                        </p>
+                        <p>
+                            <small>
+                                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                            </small>
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            <a href="http://bulma.io">
+                                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+  </body>
 </html>
+
