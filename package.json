@@ -1,0 +1,23 @@
+{
+  "name": "myblogish",
+  "version": "1.0.0",
+  "description": "Website design for a personal blog website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkelseyp/myblogish.git"
+  },
+  "author": "Brianna Kelsey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkelseyp/myblogish/issues"
+  },
+  "homepage": "https://github.com/bkelseyp/myblogish#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
